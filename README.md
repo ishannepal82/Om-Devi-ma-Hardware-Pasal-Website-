@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# Om-Devi-ma-Hardware-Pasal-Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 React + TypeScript Custom Themed Website
 
-Currently, two official plugins are available:
+A modern, responsive web application built with **React** and **TypeScript**, featuring a **fully custom CSS theme** for a unique visual identity.  
+This project emphasizes clean architecture, reusable components, and scalable front-end design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚛️ **React + TypeScript** — strong typing and component-driven development  
+- 🎨 **Custom CSS Theme** — handcrafted styles for consistent branding and flexibility  
+- 📱 **Responsive Design** — seamless experience across all devices  
+- 🔄 **Reusable Components** — modular structure for easy maintenance and scalability  
+- ⚡ **Optimized Build** — fast loading and production-ready setup  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧩 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** (with Hooks + Context)  
+- **TypeScript**  
+- **Custom CSS / SCSS**  
+- **Vite** or **Create React App** (depending on your setup)  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+# Install dependencies
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Run development server
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Build for production
+npm run build
+src/
+├── components/   # Reusable UI components
+├── pages/        # Main page views
+├── styles/       # Custom CSS theme files
+├── assets/       # Images, icons, etc.
+└── main.tsx      # Application entry point
